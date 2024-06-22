@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --header-height: 4.5rem;
+
+    /* Colors */
+    --primary-color: #001E3C;
+    --secondary-color: #C7D1D8;
+    --tertiary-color: rgb(0, 12, 25);
+    --quaternary-color: rgb(0, 25, 51);
+    --success-color: #28a745;
+    --table-color: #F1F1F1;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --white-color: #fff;
+    --black-color: hsl(220,24%,12%);
+
+    /* Fonts */
+    --body-font: "Montserrat", sans-serif;
+    --normal-font-size: 0.9375rem;
+    --font-regular: 400;
+    --font-semi-bold: 600;
+
+    /* z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 0.875rem; 
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+/* Header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
+    z-index: var(--z-fixed);
+    padding: 10px;
+}
+
+/* Nav */
+.nav{
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   justify-items: right;
+    padding: 10 1.5rem ;
+}
+
+.nav__logo{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    font-weight: var(--font-semi-bold);
+    color: var(--white-color);
+    margin-right: 5rem;
+}
+
+.nav__link{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-weight: var(--font-semi-bold);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items:flex-end;
+    transition: background-color 0.3s;
+}
+
+.nav__link:hover{
+    background-color: var(--tertiary-color);
+    height: auto;
+}
+
+.dropdown__item{
+    cursor: pointer;
+}
+
+.dropdown__arrow{
+    font-size: 1.25rem;
+    font-weight: initial;
+    transition: transform 0.4s;
+}
+
+.dropdown__link{
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    color: var(--white-color);
+    background-color: var(--quaternary-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-weight: var(--font-semi-bold);
+    transition: background-color 0.3s;
+}
+
+.dropdown__link i{
+    font-size: 1.25rem;
+    font-weight: initial;
+}
+
+.dropdown__link:hover{
+    background-color: var(--tertiary-color);
+}
+
+.dropdown__menu{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.dropdown__item:hover .dropdown__menu{
+    max-height: 1000px;
+    transition: max-height 0.4s ease-in;
+}
+
+.dropdown__item.active .dropdown__arrow{
+    transform: rotate(180deg);
+}
+
+.dropdown__add{
+    margin-left: auto;
+}
+
+/* Search Bar */
+.nav__search {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 1.5rem;
+}
+
+.nav__search-input {
+    border: none;
+    padding: 0.5rem;
+    font-size: var(--normal-font-size);
+    background-color: var(--secondary-color);
+    outline: none;
+    width: 35rem;
+}
+
+.nav__search-button {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.nav__search-button i {
+    font-size: 1.25rem;
+}
