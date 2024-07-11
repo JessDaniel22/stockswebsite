@@ -18,7 +18,7 @@ const stocksDummyData = [
         marketCap: "$600B"
     },
     {
-        symbol: "AAPL",
+        symbol: "GOOG",
         companyName: "Apple Inc.",
         currentPriceChange: 150.00,
         priceChangePercent: 1.01,
