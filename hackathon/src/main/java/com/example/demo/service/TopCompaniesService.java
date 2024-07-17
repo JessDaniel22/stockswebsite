@@ -19,7 +19,7 @@ public class TopCompaniesService {
         // Logic to update top companies (e.g., fetch from an external API)
         // For demo purposes, let's just shuffle the list
         topCompanies.clear();
-        topCompanies.addAll(List.of("Company A", "Company B", "Company C", "Company D", "Company E"));
+        topCompanies.addAll(List.of("TSLA", "GOOG", "JPMC", "KO", "NVDA"));
         java.util.Collections.shuffle(topCompanies);
     }
 
