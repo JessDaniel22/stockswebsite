@@ -13,14 +13,27 @@ import com.example.demo.model.Stock;
 public class StockService {
 
     private List<Stock> stocks = Arrays.asList(
-        new Stock("AAPL", "Apple Inc.", 150.00, 1.01, 116.21, 182.94, "$2.48T"),
-        new Stock("TSLA", "Tesla Inc.", 650.00, -2.15, 450.00, 90.00, "$300B"),
-        new Stock("ALPH", "Alphabet Inc.", 50.00, -2.15, 450.00, 900.00, "$900B"),
-        new Stock("MAVN", "Maven Tec.", 40.00, -2.15, 49.00, 900.00, "$50B"),
-        new Stock("NVID", "NVIDIA Inc.", 50.00, -2.15, 40.00, 900.00, "$200B"),
-        new Stock("TMSC", "TSMC SEMI INC.", 5.00, -2.15, 40.00, 900.00, "$610B"),
-        new Stock("BROS", "BROTHERS INC.", 60.00, -2.15, 40.00, 900.00, "$120B"),
-        new Stock("JPMC", "JP Morgan INC.", 65.00, -2.15, 450.00, 900.00, "$809B")
+        new Stock("AAPL", "Apple Inc.", 170.00, 1.20, 145.00, 190.00, "$2.78T"),
+        new Stock("TSLA", "Tesla Inc.", 700.00, 0.50, 550.00, 900.00, "$800B"),
+        new Stock("GOOGL", "Alphabet Inc.", 2750.00, 1.15, 2300.00, 2900.00, "$1.82T"),
+        new Stock("AMZN", "Amazon.com Inc.", 3500.00, 2.10, 3100.00, 3700.00, "$1.75T"),
+        new Stock("MSFT", "Microsoft Corp.", 300.00, 1.75, 250.00, 350.00, "$2.25T"),
+        new Stock("NVDA", "NVIDIA Corp.", 220.00, 1.80, 150.00, 230.00, "$600B"),
+        new Stock("TSM", "Taiwan Semiconductor Manufacturing Co.", 120.00, -0.80, 100.00, 140.00, "$580B"),
+        new Stock("JPM", "JPMorgan Chase & Co.", 150.00, -0.30, 120.00, 160.00, "$450B"),
+        new Stock("FB", "Meta Platforms Inc.", 340.00, 1.50, 250.00, 380.00, "$940B"),
+        new Stock("V", "Visa Inc.", 220.00, 1.10, 190.00, 250.00, "$480B"),
+        new Stock("DIS", "Walt Disney Co.", 180.00, 1.25, 150.00, 200.00, "$330B"),
+        new Stock("NFLX", "Netflix Inc.", 600.00, 1.85, 450.00, 650.00, "$270B"),
+        new Stock("BRK.A", "Berkshire Hathaway Inc.", 420000.00, 0.60, 370000.00, 440000.00, "$700B"),
+        new Stock("PG", "Procter & Gamble Co.", 150.00, 0.85, 130.00, 160.00, "$360B"),
+        new Stock("MA", "Mastercard Inc.", 350.00, 1.30, 300.00, 370.00, "$350B"),
+        new Stock("INTC", "Intel Corp.", 60.00, 0.40, 50.00, 70.00, "$240B"),
+        new Stock("PYPL", "PayPal Holdings Inc.", 300.00, 2.00, 200.00, 320.00, "$350B"),
+        new Stock("PEP", "PepsiCo Inc.", 160.00, 0.95, 140.00, 170.00, "$220B"),
+        new Stock("KO", "Coca-Cola Co.", 60.00, 0.75, 50.00, 65.00, "$260B"),
+        new Stock("XOM", "Exxon Mobil Corp.", 90.00, -0.20, 70.00, 100.00, "$400B")
+        
         
         // Add more stock data as needed
     );
